@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<title></title>
+	<style type="text/css">
+		.box2{
+			display: none;
+		}
+		.box3{
+			display: none;
+		}
+		.finish{
+			display: none;
+		}
+
+
+	</style>
+</head>
+<body>
+<div>
+	<div class="col-5 ms-auto me-auto mt-1 box1" style="height: 500px;">
+		<div class=" text-center fw-bold fs-3 rounded-pill" style="background: #4281f5;">
+			<p class="mb-0">Столица Канады</p>
+		</div>
+		<div class=" col" style="height: 430px">
+			<img src="ottava.jpg" class="col-12">
+		</div>
+		<div class=" d-flex col" style="height: 100px">
+			<div class="col-4 correct1 rounded-pill" style="height:100px; background: #4281f5;">
+				<p class="mb-0 text-center fw-bold fs-3 mt-4">Оттава</p>
+			</div>
+			<div class="col-4 wrong1 rounded-pill ms-1" style="height:100px; background: #4281f5;">
+				<p class="mb-0 text-center fw-bold fs-3 mt-4">Ванкувер</p>
+			</div>
+			<div class="col-4 rounded-pill ms-1 wrong2" style="height:100px; background: #4281f5;">
+				<p class="mb-0 text-center fw-bold fs-3 mt-4">Торонто</p>
+			</div>
+		</div>
+
+	</div>
+	<div class="col-5 ms-auto me-auto box2" style="height: 500px;">
+		<div class=" text-center fw-bold fs-3 rounded-pill" style="background: #4281f5;">
+			<p class="mb-0">Столица Австралии</p>
+		</div>
+		<div class=" col" style="height: 400px">
+			<img src="canberra.jpg" class="col-12">
+		</div>
+		<div class=" d-flex col" style="height: 100px">
+			<div class="col-4 rounded-pill wrong3" style="height:100px; background: #4281f5;">
+				<p class="mb-0 text-center fw-bold fs-3 mt-4">Сидней</p>
+			</div>
+			<div class="col-4 rounded-pill ms-1 wrong4" style="height:100px; background: #4281f5;">
+				<p class="mb-0 text-center fw-bold fs-3 mt-4">Мельборн</p>
+			</div>
+			<div class="col-4 correct2 rounded-pill ms-1" style="height:100px; background: #4281f5;">
+				<p class="mb-0 text-center fw-bold fs-3 mt-4">Канберра</p>
+			</div>
+		</div>
+
+	</div>
+	<div class="col-5 ms-auto me-auto box3" style="height: 500px;">
+		<div class=" text-center fw-bold fs-3 rounded-pill" style="background: #4281f5;">
+			<p class="mb-0">Столица Швейцарии</p>
+		</div>
+		<div class=" col" style="height: 400px">
+			<img src="bern.jpg" class="col-12">
+		</div>
+		<div class=" d-flex col" style="height: 100px">
+			<div class="col-4 rounded-pill wrong5" style="height:100px; background: #4281f5;">
+				<p class="mb-0 text-center fw-bold fs-3 mt-4">Цюрих</p>
+			</div>
+			<div class="col-4 rounded-pill ms-1 wrong6" style="height:100px; background: #4281f5;">
+				<p class="mb-0 text-center fw-bold fs-3 mt-4">Женева</p>
+			</div>
+			<div class="col-4 correct3 rounded-pill ms-1" style="height:100px; background: #4281f5;">
+				<p class="mb-0 text-center fw-bold fs-3 mt-4">Берн</p>
+			</div>
+		</div>
+
+	</div>
+	<div class="finish col-5 mx-auto">
+		<p class="mb-0 text-center fw-bold fs-3 mt-4">Вы прошли квиз! Поздравляю!</p>
+	</div>
+</div>		
+<script type="text/javascript">
+	document.querySelector('.wrong1').onclick = function(){
+		alert("Неверно");
+	}
+	document.querySelector('.wrong2').onclick = function(){
+		alert("Неверно");
+	}
+	document.querySelector('.wrong3').onclick = function(){
+		alert("Неверно");
+	}
+	document.querySelector('.wrong4').onclick = function(){
+		alert("Неверно");
+	}
+	document.querySelector('.wrong5').onclick = function(){
+		alert("Неверно");
+	}
+	document.querySelector('.wrong6').onclick = function(){
+		alert("Неверно");
+	}
+	document.querySelector('.correct1').onclick = function(){
+		alert("Верно");
+		document.querySelector('.box1').style.display = 'none';
+		document.querySelector('.box2').style.display = 'block';
+	}
+	document.querySelector('.correct2').onclick = function(){
+		alert("Верно");
+		document.querySelector('.box2').style.display = 'none';
+		document.querySelector('.box3').style.display = 'block';
+	}
+	document.querySelector('.correct3').onclick = function(){
+		alert("Верно");
+		document.querySelector('.box3').style.display = 'none';
+		document.querySelector('.finish').style.display = 'block';
+	}
+</script>
+</body>
+</html>
